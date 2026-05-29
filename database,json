@@ -1,13 +1,1 @@
-[
-  {
-    "name": "Test Game",
-    "samples": 1,
-    "algorithms": {
-      "XPRESS8K": {
-        "avgRatio": 0.6,
-        "samples": 1
-      }
-    },
-    "updatedAt": 1780015964
-  }
-]
+[]
