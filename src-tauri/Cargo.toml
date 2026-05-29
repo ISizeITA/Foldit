@@ -1,0 +1,53 @@
+[package]
+name = "foldit"
+version = "0.1.0"
+description = "Transparent NTFS compression for games and apps"
+authors = ["ISize (Roldano Laurenza)"]
+edition = "2021"
+rust-version = "1.77"
+
+[lib]
+name = "foldit_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-opener = "2"
+tauri-plugin-updater = "2"
+tauri-plugin-process = "2"
+tauri-plugin-notification = "2"
+tauri-plugin-single-instance = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["rt-multi-thread", "sync", "macros", "time"] }
+thiserror = "2"
+jwalk = "0.8"
+notify = "6"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+uuid = { version = "1", features = ["v4"] }
+
+[target.'cfg(windows)'.dependencies]
+winreg = "0.52"
+windows = { version = "0.58", features = [
+  "Win32_Foundation",
+  "Win32_Storage_FileSystem",
+  "Win32_System_Ioctl",
+  "Win32_System_IO",
+  "Win32_Security",
+  "Win32_System_Threading",
+  "Win32_UI_Shell",
+  "Win32_UI_WindowsAndMessaging",
+] }
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+# Thin LTO: nearly the same optimisation as full LTO but far lighter on RAM at
+# link time (full LTO can crash the linker with 0xC0000409 on this dep tree).
+lto = "thin"
+opt-level = "s"
+strip = true

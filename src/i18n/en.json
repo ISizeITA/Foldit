@@ -1,0 +1,139 @@
+{
+  "app": {
+    "tagline": "Transparent NTFS compression"
+  },
+  "nav": {
+    "home": "Home",
+    "scanner": "Scanner",
+    "telemetry": "Database",
+    "settings": "Settings"
+  },
+  "admin": {
+    "elevated": "Administrator privileges",
+    "notElevated": "Limited privileges",
+    "relaunch": "Relaunch as admin"
+  },
+  "home": {
+    "title": "Your folders",
+    "subtitle": "Manage and monitor your compressed folders.",
+    "empty": "No folders yet. Compress something from the Scanner.",
+    "selectPrompt": "Select a folder to see its details.",
+    "saved": "saved",
+    "acrossFolders": "across {{count}} folders",
+    "method": "Method",
+    "files": "Files",
+    "original": "Original",
+    "compressed": "Compressed",
+    "watchdog": "Update monitoring",
+    "watchdogHint": "Warns when the launcher adds new uncompressed files.",
+    "watchdogAlert": "New uncompressed files detected.",
+    "recompress": "Recompress",
+    "newFiles": "New files",
+    "skipLowGain": "Skip low-gain files",
+    "skipLowGainHint": "Leave files that would barely shrink uncompressed.",
+    "updated": "Updated",
+    "actions": {
+      "refresh": "Re-check",
+      "open": "Open folder",
+      "rollback": "Decompress",
+      "remove": "Remove"
+    }
+  },
+  "scanner": {
+    "title": "Scanner & compression",
+    "subtitle": "Find games and programs to compress.",
+    "presets": "Preset locations",
+    "custom": "Custom folders",
+    "addFolder": "Add folder",
+    "notAvailable": "not found",
+    "scan": "Scan",
+    "scanning": "Scanning…",
+    "remove": "Remove",
+    "results": "Results",
+    "empty": "No results yet. Select some locations and start a scan.",
+    "noResults": "No items match the filters.",
+    "search": "Search by name…",
+    "filter": {
+      "all": "All",
+      "uncompressed": "Uncompressed",
+      "compressed": "Compressed"
+    },
+    "total": "{{count}} items · {{size}} · {{saved}} saved",
+    "selectAll": "Select all",
+    "algorithm": "Algorithm",
+    "options": "Options",
+    "skipLowGain": "Skip low-gain files",
+    "skipLowGainHint": "Leave files that would barely shrink uncompressed.",
+    "preset": {
+      "programs": "Installed programs",
+      "userPrograms": "User programs"
+    },
+    "compressSelected": "Compress selected ({{count}})",
+    "selectedSummary": "{{count}} selected · {{size}}",
+    "col": {
+      "name": "Name",
+      "status": "Status",
+      "estimate": "Estimate",
+      "size": "Size",
+      "savings": "Savings"
+    },
+    "status": {
+      "uncompressed": "Uncompressed",
+      "partial": "Partial",
+      "ntfs": "NTFS (legacy)"
+    },
+    "queue": {
+      "title": "Compression",
+      "jobs": "{{done}}/{{total}} folders",
+      "folder": "Folder {{n}} of {{total}}",
+      "savings": "Current savings",
+      "cancel": "Cancel"
+    },
+    "estSavings": "est. ~{{size}}",
+    "issues": "Some files skipped: {{admin}} no permission · {{locked}} in use · {{failed}} errors.",
+    "systemWarn": "This is a Windows system folder. Compressing it is not recommended. Add it anyway?",
+    "notifyDone": "Compression complete.",
+    "lowGain": {
+      "message": "Almost no savings: these files appear to be already compressed at the source.",
+      "skip": "Skip folder"
+    }
+  },
+  "telemetry": {
+    "title": "Compression database",
+    "subtitle": "Community-sourced compression-ratio estimates.",
+    "search": "Search a game or program…",
+    "reload": "Refresh",
+    "loading": "Loading the database…",
+    "error": "Couldn't load the database. Check your connection or configure the endpoint.",
+    "empty": "No entries in the database.",
+    "noResults": "No results for your search.",
+    "col": {
+      "name": "Name",
+      "samples": "Samples"
+    },
+    "hint": "Percentages show estimated space saved per algorithm (higher = better)."
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Foldit preferences.",
+    "language": "Language",
+    "languageHint": "Interface language.",
+    "defaultAlgorithm": "Default algorithm",
+    "defaultAlgorithmHint": "Used by default in Scanner and Home.",
+    "skipLowGain": "Skip low-gain files",
+    "skipLowGainHint": "By default, leave files that would barely shrink uncompressed.",
+    "telemetry": "Anonymous telemetry",
+    "telemetryHint": "Send anonymous compression stats to the community database.",
+    "contextMenu": "Explorer menu",
+    "contextMenuHint": "Adds \"Compress with Foldit\" to the right-click menu on folders."
+  },
+  "update": {
+    "available": "Version {{version}} available",
+    "install": "Install",
+    "installing": "Installing… {{pct}}%",
+    "later": "Later"
+  },
+  "common": {
+    "comingSoon": "Coming in the next phase."
+  }
+}

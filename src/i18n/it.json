@@ -1,0 +1,139 @@
+{
+  "app": {
+    "tagline": "Compressione NTFS trasparente"
+  },
+  "nav": {
+    "home": "Home",
+    "scanner": "Scanner",
+    "telemetry": "Database",
+    "settings": "Impostazioni"
+  },
+  "admin": {
+    "elevated": "Privilegi amministratore",
+    "notElevated": "Privilegi limitati",
+    "relaunch": "Riavvia come admin"
+  },
+  "home": {
+    "title": "Le tue cartelle",
+    "subtitle": "Gestisci e monitora le cartelle già compresse.",
+    "empty": "Nessuna cartella ancora. Comprimi qualcosa dallo Scanner.",
+    "selectPrompt": "Seleziona una cartella per vedere i dettagli.",
+    "saved": "risparmiati",
+    "acrossFolders": "su {{count}} cartelle",
+    "method": "Metodo",
+    "files": "File",
+    "original": "Originale",
+    "compressed": "Compresso",
+    "watchdog": "Monitoraggio aggiornamenti",
+    "watchdogHint": "Avvisa quando il launcher aggiunge nuovi file non compressi.",
+    "watchdogAlert": "Rilevati nuovi file non compressi.",
+    "recompress": "Ricomprimi",
+    "newFiles": "Nuovi file",
+    "skipLowGain": "Salta file con guadagno minimo",
+    "skipLowGainHint": "Lascia non compressi i file che guadagnerebbero poco.",
+    "updated": "Aggiornato",
+    "actions": {
+      "refresh": "Ricontrolla",
+      "open": "Apri cartella",
+      "rollback": "Decomprimi",
+      "remove": "Rimuovi"
+    }
+  },
+  "scanner": {
+    "title": "Scanner & compressione",
+    "subtitle": "Trova giochi e programmi da comprimere.",
+    "presets": "Percorsi predefiniti",
+    "custom": "Cartelle personalizzate",
+    "addFolder": "Aggiungi cartella",
+    "notAvailable": "non trovato",
+    "scan": "Scansiona",
+    "scanning": "Scansione in corso…",
+    "remove": "Rimuovi",
+    "results": "Risultati",
+    "empty": "Nessun risultato. Seleziona dei percorsi e avvia una scansione.",
+    "noResults": "Nessun elemento corrisponde ai filtri.",
+    "search": "Cerca per nome…",
+    "filter": {
+      "all": "Tutti",
+      "uncompressed": "Non compressi",
+      "compressed": "Compressi"
+    },
+    "total": "{{count}} elementi · {{size}} · risparmiati {{saved}}",
+    "selectAll": "Seleziona tutto",
+    "algorithm": "Algoritmo",
+    "options": "Impostazioni",
+    "skipLowGain": "Salta file con guadagno minimo",
+    "skipLowGainHint": "Lascia non compressi i file che guadagnerebbero poco.",
+    "preset": {
+      "programs": "Programmi installati",
+      "userPrograms": "Programmi utente"
+    },
+    "compressSelected": "Comprimi selezionati ({{count}})",
+    "selectedSummary": "{{count}} selezionati · {{size}}",
+    "col": {
+      "name": "Nome",
+      "status": "Stato",
+      "estimate": "Stima",
+      "size": "Dimensione",
+      "savings": "Risparmio"
+    },
+    "status": {
+      "uncompressed": "Non compresso",
+      "partial": "Parziale",
+      "ntfs": "NTFS classica"
+    },
+    "queue": {
+      "title": "Compressione",
+      "jobs": "{{done}}/{{total}} cartelle",
+      "folder": "Cartella {{n}} di {{total}}",
+      "savings": "Risparmio attuale",
+      "cancel": "Annulla"
+    },
+    "estSavings": "stima ~{{size}}",
+    "issues": "Alcuni file saltati: {{admin}} senza permessi · {{locked}} in uso · {{failed}} errori.",
+    "systemWarn": "Questa è una cartella di sistema di Windows. Comprimerla è sconsigliato. Aggiungerla comunque?",
+    "notifyDone": "Compressione completata.",
+    "lowGain": {
+      "message": "Risparmio quasi nullo: i file sembrano già compressi all'origine.",
+      "skip": "Salta cartella"
+    }
+  },
+  "telemetry": {
+    "title": "Database compressione",
+    "subtitle": "Tassi di compressione stimati dalla community.",
+    "search": "Cerca un gioco o programma…",
+    "reload": "Aggiorna",
+    "loading": "Caricamento del database…",
+    "error": "Impossibile caricare il database. Controlla la connessione o configura l'endpoint.",
+    "empty": "Nessuna voce nel database.",
+    "noResults": "Nessun risultato per la ricerca.",
+    "col": {
+      "name": "Nome",
+      "samples": "Campioni"
+    },
+    "hint": "Le percentuali indicano lo spazio risparmiato stimato per algoritmo (più alto = meglio)."
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "subtitle": "Preferenze di Foldit.",
+    "language": "Lingua",
+    "languageHint": "Lingua dell'interfaccia.",
+    "defaultAlgorithm": "Algoritmo predefinito",
+    "defaultAlgorithmHint": "Usato di default in Scanner e Home.",
+    "skipLowGain": "Salta file con guadagno minimo",
+    "skipLowGainHint": "Di default lascia non compressi i file che guadagnerebbero poco.",
+    "telemetry": "Telemetria anonima",
+    "telemetryHint": "Invia statistiche anonime di compressione al database della community.",
+    "contextMenu": "Menu di Esplora risorse",
+    "contextMenuHint": "Aggiunge \"Comprimi con Foldit\" al tasto destro sulle cartelle."
+  },
+  "update": {
+    "available": "Disponibile la versione {{version}}",
+    "install": "Installa",
+    "installing": "Installazione… {{pct}}%",
+    "later": "Più tardi"
+  },
+  "common": {
+    "comingSoon": "In arrivo nella prossima fase."
+  }
+}

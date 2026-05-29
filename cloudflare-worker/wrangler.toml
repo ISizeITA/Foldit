@@ -1,0 +1,13 @@
+name = "foldit-telemetry"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+
+# Public, non-secret configuration. Edit these to point at your data repo.
+[vars]
+GH_OWNER = "ISizeITA"
+GH_REPO = "Foldit"
+GH_BRANCH = "main"
+DB_PATH = "database.json"
+
+# GITHUB_TOKEN is a SECRET — do NOT put it here.
+# Set it once with:  wrangler secret put GITHUB_TOKEN
