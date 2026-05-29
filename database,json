@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "name": "CAPTURED",
+    "samples": 1,
+    "algorithms": {
+      "XPRESS8K": {
+        "avgRatio": 0.9609579,
+        "samples": 1
+      }
+    },
+    "updatedAt": 1780016714
+  }
+]
